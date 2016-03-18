@@ -1,0 +1,29 @@
+*Read this file to understand how each LED segment is connected.
+
+There are 8 segments on each digit, but only 7 are controlled.
+
+This is a visual representation of each of the segments on the digits. Each segment is assigned a different letter.
+Segment "c" is not used in the code.
+
+   f           
+ g   h                
+   e                        
+ a   d
+   b    c
+
+Note: The letters form an "8", or a full digit, with a period (segment "c").
+
+
+
+To control each segment from the code, I made arrays to hold the pin numbers.
+
+
+
+int a[] = {2,10,18};
+int b[] = {3,11,19};
+int c[] = {4,12,20};
+int d[] = {5,13,21};
+int e[] = {6,14,22};
+int f[] = {7,15,24};
+int g[] = {8,16,26};
+int h[] = {9,17,28};
