@@ -34,12 +34,12 @@ int b[] = {3,34,19};
 int c[] = {4,36,20};
 int d[] = {5,38,21};
 int e[] = {6,40,22};
-int f[] = {7,42,24};
-int g[] = {8,44,26};
-int h[] = {9,46,28};
+int f[] = {7,42,24};         
+int g[] = {48,44,26};
+int h[] = {50,46,28};
 
 
-int buttonPins[] = {48,10,11,12,13};
+int buttonPins[] = {52,53,51,49,47};
 int Count = 0;
 int FailCount = 0;
 int numReceived = 0;
@@ -59,7 +59,7 @@ int times[] ={0, 0, 0, 0}; //times[0] = tenseconds     times[1] = seconds      t
 void setup() {
   Serial.begin(9600);
 
-  for(int i = 2; i <=46 ; i++){
+  for(int i = 2; i <=50 ; i++){
       pinMode(i, OUTPUT);
   }
   
@@ -264,7 +264,7 @@ void displayTime(){
 }
 
 void clearDisplay(){
-    for(int i = 2; i <= 46 ; i++){
+    for(int i = 2; i <= 50 ; i++){
       digitalWrite(i, LOW);
     }
 }
