@@ -233,6 +233,8 @@ void updateTime(){
        times[0] +=1;
        times[1] = 0;
    }
+   if(times[0] == 10)
+    resetTime();
 }
 
 void displayTime(){
